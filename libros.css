@@ -19,7 +19,7 @@ a:link, a:visited, a:active {
     grid-gap: 20px;
     grid-template-areas:"header header header"
                         "barra barra barra"
-                        "contenido contenido imagen"
+                        "contenido contenido contenido"
                         "footer footer footer";
 }
 
@@ -58,19 +58,13 @@ a:link, a:visited, a:active {
 
 .contenedor .articulo{
     grid-area: contenido;
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     background-color: #fff;
     width: auto;
-}
-
-.contenedor .imagen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: imagen;
 }
 
 .contenedor .pie{
@@ -109,12 +103,24 @@ a:link, a:visited, a:active {
                 grid-template-areas:"header header header"
                                     "barra barra barra"
                                     "contenido contenido contenido"
-                                    "imagen imagen imagen"
                                     "footer footer footer";
     }
     
 }
 
-#titular{
+#cuadro{
     text-align: center;
+}
+
+.año{
+    font-weight: bold;
+}
+
+.obra{
+    font-weight: bold;
+}
+
+th,td{
+    border: 3px solid black;
+    padding: 15px;
 }
